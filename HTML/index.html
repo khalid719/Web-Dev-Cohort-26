@@ -1,120 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ChaiCode Course Registration</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; padding: 20px; background: #f4f4f9; }
-        form { max-width: 650px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        fieldset { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px; }
-        legend { font-weight: bold; color: #4a148c; padding: 0 10px; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: 500; }
-        input[type="text"], input[type="email"], input[type="number"], select, textarea {
-            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
-        }
-        .inline-group { display: flex; gap: 15px; align-items: center; margin-top: 5px; }
-        .submit-btn { background: #4a148c; color: white; padding: 12px 25px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
-        .submit-btn:hover { background: #6a1b9a; }
-    </style>
-</head>
-<body>
 
-    <!-- 9. Action (destination) and Method (POST for security) -->
-    <form action="/api/chaicode/register" method="POST" enctype="multipart/form-data">
-        <h1>🍵 ChaiCode Enrollment</h1>
-        <p>Complete your registration to join the 2026 Cohort.</p>
+<!-- q1: Create a complete personal portfolio page with: header, nav, main, sections for about/skills/projects, footer. Show your HTML mastery.
 
-        <!-- 6. Fieldset and Legend for grouping -->
-        <fieldset>
-            <legend>Personal Details</legend>
-            
-            <div class="form-group">
-                <label for="full-name">Full Name</label>
-                <!-- 2. Required validation and 5. Text length limit -->
-                <input type="text" id="full-name" name="student_name" placeholder="John Doe" maxlength="50" required>
-            </div>
+q2: Build a complete blog post page with article, header, time, aside for related posts, and proper semantic structure.
 
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="student_email" placeholder="john@example.com" required>
-            </div>
+q3: Build a complete registration form with: text, email, password, number, date inputs, radio buttons, checkboxes, select, textarea, file upload, all with proper validation and labels.
 
-            <div class="form-group">
-                <label for="age">Age</label>
-                <!-- 2. Min/Max validation -->
-                <input type="number" id="age" name="age" min="15" max="100" required>
-            </div>
-        </fieldset>
+q4: Create a complete product page with: product images, specification table, feature lists, video demo, and order form. Demonstrate comprehensive HTML knowledge.
 
-        <fieldset>
-            <legend>Course Selection</legend>
+q5: Build the ultimate ChaiCode landing page with: (1) Complete semantic structure, (2) Hero section with video background, (3) Course cards with images, (4) Feature comparison table, (5) Testimonials section, (6) Newsletter signup form, (7) FAQ with description lists, (8) Footer with social links. Use everything you've learned! -->
 
-            <div class="form-group">
-                <label for="course-track">Select Course Track</label>
-                <!-- 4. Select Dropdown -->
-                <select id="course-track" name="course_id" required>
-                    <option value="" disabled selected>-- Select a Track --</option>
-                    <option value="fullstack">Full Stack JavaScript</option>
-                    <option value="backend">Backend with Go & Rust</option>
-                    <option value="devops">Cloud & DevOps Mastery</option>
-                </select>
-            </div>
 
-            <div class="form-group">
-                <label for="referral">How did you hear about us? (Autocomplete)</label>
-                <!-- 8. Datalist for Autocomplete -->
-                <input list="referral-list" id="referral" name="referral_source" placeholder="Start typing...">
-                <datalist id="referral-list">
-                    <option value="YouTube">
-                    <option value="Twitter/X">
-                    <option value="LinkedIn">
-                    <option value="Friend/Colleague">
-                    <option value="Discord Community">
-                </datalist>
-            </div>
-
-            <div class="form-group">
-                <label>Experience Level</label>
-                <!-- 3. Radio Buttons (Single Choice) -->
-                <div class="inline-group">
-                    <input type="radio" id="beginner" name="level" value="beginner" checked>
-                    <label for="beginner">Beginner</label>
-                    <input type="radio" id="pro" name="level" value="pro">
-                    <label for="pro">Professional</label>
-                </div>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Additional Requirements</legend>
-
-            <div class="form-group">
-                <label>Add-ons:</label>
-                <!-- 3. Checkboxes (Multiple Choices) -->
-                <div class="inline-group">
-                    <input type="checkbox" id="mentor" name="addons[]" value="mentorship">
-                    <label for="mentor">1-on-1 Mentorship</label>
-                    <input type="checkbox" id="cert" name="addons[]" value="certificate">
-                    <label for="cert">Hardcopy Certificate</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="id-proof">Upload ID Proof (PDF/Image)</label>
-                <!-- 7. File Upload with accept attribute -->
-                <input type="file" id="id-proof" name="id_document" accept="image/*, .pdf">
-            </div>
-
-            <div class="form-group">
-                <label for="motivation">Why do you want to learn coding?</label>
-                <!-- 5. Textarea for multi-line input -->
-                <textarea id="motivation" name="motivation" rows="4" placeholder="Share your story..."></textarea>
-            </div>
-        </fieldset>
-
-        <button type="submit" class="submit-btn">Complete Registration</button>
-    </form>
-
-</body>
-</html>
