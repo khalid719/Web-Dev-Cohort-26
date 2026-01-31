@@ -4,6 +4,7 @@ datePublished: Sat Jan 31 2026 11:47:45 GMT+0000 (Coordinated Universal Time)
 cuid: cml28ziwr000302jvethc9pel
 slug: inside-git-how-it-works-and-the-role-of-the-git-folder
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769860011200/719fe150-117e-4781-b6fc-fc88cc649a72.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769860090676/735777cb-bfac-47f1-acdc-62e2d9a186b5.png
 tags: hiteshchoudharylco, hiteshchaudhary, chaicode, chaicode-webdev-cohort-2026, khaliddev
 
 ---
