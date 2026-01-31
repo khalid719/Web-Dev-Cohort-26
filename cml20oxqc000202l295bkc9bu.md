@@ -5,7 +5,7 @@ cuid: cml20oxqc000202l295bkc9bu
 slug: emmet
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769846032392/6087e2f8-dbb5-4b95-aa73-37bf4726963c.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1769846116485/d968d3b1-4b2f-44a3-ad21-ca402819ff2b.png
-tags: hiteshchoudharylco, hiteshchaudhary, chaicode, chaicohort, khaliddev
+tags: hiteshchoudharylco, hiteshchaudhary, chaicode, chaicohort, chaicode-webdev-cohort-2026, khaliddev
 
 ---
 
