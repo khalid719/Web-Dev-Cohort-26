@@ -1,0 +1,248 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    background-color: rgb(66, 65, 63);
+    color: white;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 100px;
+    background-color: rgb(39, 29, 29);
+    border-bottom: 1px solid rgb(52, 29, 29);
+    box-shadow: 0 4px 10px rgba(215, 179, 179, 0.12);
+}
+
+.navigation-lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    gap: 50px;
+}
+
+.logo-text{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(221, 154, 21);
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.logo-text:hover{
+    font-weight: 730;
+    color: rgb(227, 162, 34);
+    cursor: pointer;
+    margin-left: 24px;
+}
+
+
+nav:hover{
+    background-color: rgb(49, 37, 37);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+a:hover{
+    color: orange;
+}
+
+input{
+    background-color: rgb(72, 53, 53);
+    padding: 5px;
+    border: 2px solid rgb(65, 52, 52);
+    border-radius: 10px;
+}
+
+input:hover{
+    background-color: rgb(76, 66, 66);
+}
+
+input::placeholder{
+    color: rgb(184, 178, 178);
+}
+
+
+button{
+    background-color: rgb(72, 53, 53);
+    color: rgb(168, 153, 153);
+    padding: 5px;
+    border: 2px solid rgb(71, 58, 58);
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(56, 49, 46);
+    color: rgb(221, 221, 237);
+}
+
+.cta-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.cta-button{
+    background-color: rgb(45, 37, 107);
+    border: 1px solid rgb(71, 61, 85);
+    border-radius: 8px;
+    padding: 5px 25px;
+    margin: 10px;
+    color: wheat;
+    font-size: 22px;
+}
+
+.cta-button:hover{
+    background-color: rgb(101, 67, 5);
+    border: 1px solid rgb(99, 65, 1);
+    color: rgb(187, 188, 215);
+}
+
+
+.hero-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    max-width: 85%;
+    margin: auto;
+}
+
+.content-wrapper{
+    width: 50%;
+    padding: 40px 10px;
+}
+
+.image-wrapper{
+    width: 50%;
+    height: auto;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#hero-sub{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+h3{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+h3:hover{
+    transform: scale(1.1);
+    transition: transform 3s ease, box-shadow 0.3 ease;
+}
+
+.card-sub p{
+    font-size: 18px;
+    text-align: center;
+    color: beige;margin-bottom: 35px;
+}
+
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: rgb(59, 54, 54);
+    margin-bottom: 100px;
+    padding: 20px;
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(241, 223, 223, 0.08);
+}
+
+.hero-footer{
+    background-color: black;
+
+}
+
+.footer-nav{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-div{
+    margin: 40px;
+    width: 33%;
+    height: 50px;
+}
+
+.footer-div p{
+    text-align: left;
+}
+.footer-div ul{
+    text-align: left;
+}
+
+.footer-copy{
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+@media(max-width: 768px){
+
+    .hero-layout{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-wrapper , .image-wrapper {
+        width: 100%;
+    }
+
+    #hero-title{
+        font-size: 40px;
+    }
+
+    #hero-sub{
+        font-size: 18px;
+    }
+}
